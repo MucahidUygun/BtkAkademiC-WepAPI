@@ -19,7 +19,7 @@ public class BookRepository : RepositoryBase<Book>, IBookRepository
     public void DeleteOneBook(Book book) => Delete(book);
 
     public IQueryable<Book> GetAllBooks(bool trackChanges) => FindAll(trackChanges).OrderBy(p=>p.Id);
-    public IQueryable<Book> GetOneBookById(int id, bool trackChanges) => FindByCondition(p =>p.Id.Equals(id),trackChanges);
+    public Book GetOneBookById(int id, bool trackChanges) => FindByCondition(p =>p.Id.Equals(id),trackChanges).SingleOrDefault();
 
     public void UpdateOneBook(Book book) => Update(book);
 }
