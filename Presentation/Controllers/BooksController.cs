@@ -1,27 +1,31 @@
 ﻿using Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Repositories.Contracts;
-using Repositories.EFCore;
+using Services.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace WebAPI.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
+namespace Presentation.Controllers;
+[ApiController]
+[Route("api/books")]
+
     public class BookController : ControllerBase
     {
-        private readonly IRepositoryManager _manager;
+        private readonly IServiceManager _manager;
 
-        public BookController(IRepositoryManager manager)
+        public BookController(IServiceManager manager)
         {
             _manager = manager;
         }
+
         [HttpGet]
         public IActionResult GetAllBook()
         {
             try
             {
-                var books = _manager.Book.GetAllBooks(false);
+                var books = _manager.BookService.GetAllBooks(false);
                 return Ok(books);
             }
             catch (Exception ex)
@@ -30,11 +34,11 @@ namespace WebAPI.Controllers
             }
         }
         [HttpGet("{id:int}")]
-        public IActionResult GetOneBook([FromRoute(Name = "id")] int id) 
+        public IActionResult GetOneBook([FromRoute(Name = "id")] int id)
         {
             try
             {
-                var book = _manager.Book.GetOneBookById(id:id,trackChanges:false);
+                var book = _manager.BookService.GetOneBookById(id, false);
                 return Ok(book);
 
             }
@@ -47,9 +51,8 @@ namespace WebAPI.Controllers
         [HttpPost]
         public IActionResult CreateOneBokk([FromBody] Book book)
         {
-             _manager.Book.CreateOneBook(book);
-            _manager.Save();
+            _manager.BookService.CreateOneBook(book);
             return Ok(book);
         }
     }
-}
+

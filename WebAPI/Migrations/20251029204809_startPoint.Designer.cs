@@ -8,11 +8,11 @@ using Repositories.EFCore;
 
 #nullable disable
 
-namespace Repositories.Migrations
+namespace WebAPI.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20251027204944_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20251029204809_startPoint")]
+    partial class startPoint
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
