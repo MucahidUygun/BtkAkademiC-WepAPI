@@ -1,0 +1,12 @@
+2025-11-16 23:17:59.8316 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-16 23:17:59.8472 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-16 23:17:59.8743 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-16 23:22:18.1018 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-16 23:22:18.1204 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-16 23:22:18.1423 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-16 23:23:22.5664 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-16 23:23:22.5664 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-16 23:23:22.5950 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-16 23:23:51.3774 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-16 23:23:51.3942 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-16 23:23:51.4101 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
