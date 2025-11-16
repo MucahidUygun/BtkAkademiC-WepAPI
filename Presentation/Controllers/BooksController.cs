@@ -25,6 +25,7 @@ public class BookController : ControllerBase
     {
         try
         {
+            throw new Exception("!!!!!");
             var books = _manager.BookService.GetAllBooks(false);
             return Ok(books);
         }
