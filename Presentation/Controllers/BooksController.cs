@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 using System;
@@ -23,30 +24,14 @@ public class BookController : ControllerBase
     [HttpGet]
     public IActionResult GetAllBook()
     {
-        try
-        {
-            throw new Exception("!!!!!");
-            var books = _manager.BookService.GetAllBooks(false);
-            return Ok(books);
-        }
-        catch (Exception ex)
-        {
-            throw new Exception(ex.Message);
-        }
+        var books = _manager.BookService.GetAllBooks(false);
+        return Ok(books);
     }
     [HttpGet("{id:int}")]
     public IActionResult GetOneBook([FromRoute(Name = "id")] int id)
     {
-        try
-        {
-            var book = _manager.BookService.GetOneBookById(id, false);
-            return Ok(book);
-
-        }
-        catch (Exception ex)
-        {
-            throw new Exception(ex.Message);
-        }
+        var book = _manager.BookService.GetOneBookById(id, false);
+        return Ok(book);
     }
 
     [HttpPost]
@@ -65,18 +50,8 @@ public class BookController : ControllerBase
     [HttpPut("{id:int}")]
     public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id,[FromBody] Book book) 
     {
-        try
-        {
-            if (book is null)
-                return BadRequest();
-
-            _manager.BookService.UpdateOneBook(id,book,true);
-            return NoContent();
-        }
-        catch (Exception ex)
-        {
-            throw new Exception(ex.Message);
-        }
+        _manager.BookService.UpdateOneBook(id,book,true);
+        return NoContent();
     }
         
 

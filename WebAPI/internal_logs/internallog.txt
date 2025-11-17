@@ -16,3 +16,19 @@
 2025-11-17 01:27:44.1372 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2025-11-17 01:27:44.1517 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
 2025-11-17 01:27:44.1738 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-17 23:50:28.7733 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-17 23:50:28.7829 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-17 23:50:28.7951 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-18 00:22:57.8540 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-18 00:22:57.8673 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-18 00:22:57.8818 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-18 00:23:24.5189 Info AppDomain Shutting down. LogFactory closing...
+2025-11-18 00:23:24.5248 Info LogFactory has been disposed.
+2025-11-18 00:23:27.5312 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-18 00:23:27.5416 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-18 00:23:27.5416 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
+2025-11-18 00:25:17.4905 Info AppDomain Shutting down. LogFactory closing...
+2025-11-18 00:25:17.4905 Info LogFactory has been disposed.
+2025-11-18 00:25:20.0055 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-11-18 00:25:20.0186 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.6.4706. Product version: 6.0.6+1913a823347d47c0b004ce714af74436261daf20. GlobalAssemblyCache: False
+2025-11-18 00:25:20.0619 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=D:\Angular&C#\BtkAkademiC#WepAPI\WebAPI\nlog.config
